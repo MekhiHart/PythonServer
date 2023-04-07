@@ -1,9 +1,10 @@
 import socket
+serverAddress = "https://pythonserver.onrender.com"
 PORT = 1024
 numberOfBytes = 8
 
 myTCPSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-myTCPSocket.bind(("localhost", PORT))
+myTCPSocket.bind((serverAddress, PORT))
 myTCPSocket.listen(5) # idk what the numbers mean
 incomingSocket, incomingAddress = myTCPSocket.accept() # accepts any incoming messages
 
