@@ -18,6 +18,6 @@ while flag:
     responseData = strData.upper()
     incomingSocket.send(bytearray(str(responseData), encoding="utf-8")) # sends new message back to client
 
-    flag = int(input("0 = False & 1 = True")) # allows to end loop
+    # flag = int(input("0 = False & 1 = True")) # allows to end loop
 
 incomingSocket.close()
